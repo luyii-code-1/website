@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        #video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        #video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        #text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            display: none; /* 初始时不显示文字 */
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <video id="customVideo" controls loop>
+            <source src="/404.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="text-overlay">
+            <h1>404 Not Found</h1>
+            <p>Sorry, the page you are looking for might be in another universe.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var video = document.getElementById("customVideo");
+            var textOverlay = document.getElementById("text-overlay");
+
+            // 生成一个在0到1之间的随机数
+            var randomValue = Math.random();
+
+            // 根据概率播放不同的视频
+            if (randomValue < 0.2) {
+                video.src = "/114514.mp4";
+            }
+
+            // 检测浏览器是否允许自动播放
+            var isAutoplayAllowed = false;
+            video.muted = true;
+
+            // 在用户与页面互动时取消静音
+            document.addEventListener("click", function () {
+                if (!isAutoplayAllowed && video.paused) {
+                    video.muted = false;
+                    video.play();
+                    textOverlay.style.display = "none"; // 隐藏文字
+                }
+            });
+
+            video.play().then(function() {
+                isAutoplayAllowed = true;
+            }).catch(function(error) {
+                console.error("Autoplay not allowed:", error);
+                textOverlay.style.display = "block"; // 显示文字
+            });
+        });
+    </script>
+</body>
+</html>

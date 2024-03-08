@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VNC 连接器</title>
+</head>
+<body>
+  <h1>VNC 连接器</h1>
+  <form id="vncForm">
+    <label for="serverAddress">服务器地址：</label>
+    <input type="text" id="serverAddress" placeholder="输入服务器地址"><br><br>
+    <label for="serverPort">服务器端口：</label>
+    <input type="number" id="serverPort" placeholder="输入服务器端口"><br><br>
+    <label for="password">密码：</label>
+    <input type="password" id="password" placeholder="输入密码"><br><br>
+    <input type="button" value="连接" onclick="connectVNC()">
+  </form>
+
+  <script>
+    function connectVNC() {
+      var serverAddress = document.getElementById("serverAddress").value;
+      var serverPort = document.getElementById("serverPort").value;
+      var password = document.getElementById("password").value;
+      
+      // 构建 VNC 连接字符串
+      var vncUrl = "vnc://" + serverAddress + ":" + serverPort + "/?password=" + password;
+      
+      // 使用浏览器的 VNC 协议处理程序打开连接
+      window.location.href = vncUrl;
+    }
+  </script>
+</body>
+</html>

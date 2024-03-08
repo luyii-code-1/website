@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check-luyii</title>
+    <meta charset="UTF-8">
+    <style>
+        /* 省略原有样式... */
+    </style>
+</head>
+<body>
+    <h1>Luyii-code真假检测</h1>
+    <button class="button" onclick="checkPasswordAndOpenWindow('/', '立刻验证')">立刻验证</button>
+    <script>
+        async function checkPasswordAndOpenWindow(url, locationName) {
+            var password = prompt("请输入验证口令:", "");
+            if (password === null) {
+                return; // 用户取消输入密码
+            }
+
+            var passwordHash = await sha256(password);
+            var response = await fetch('/checkluyii');
+            var storedPasswordHash = await response.text();
+
+            if (passwordHash !== storedPasswordHash) {
+                alert("口令不正确，请重试。");
+                return;
+            }
+
+            alert("验证成功！");
+        }
+
+        async function sha256(message) {
+            const msgBuffer = new TextEncoder().encode(message);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+
+        function openWindowWithAnimation(url, locationName) {
+            var newWindow = window.open("", "_blank", "width=1000, height=1400");
+
+            newWindow.onload = function() {
+                newWindow.document.body.style.opacity = 0;
+
+                var opacity = 0;
+                function animate() {
+                    opacity += 0.05;
+                    newWindow.document.body.style.opacity = opacity;
+                    if (opacity < 1) {
+                        requestAnimationFrame(animate);
+                    }
+                }
+
+                animate();
+            };
+
+            newWindow.location.href = url;
+        }
+    </script>
+</body>
+</html>

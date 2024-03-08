@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title>中国地震台网地震信息</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .refresh-button {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>中国地震台网地震信息</h1>
+    <table id="earthquake-table">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>信息类型</th>
+                <th>发震时间</th>
+                <th>震源地</th>
+                <th>震级</th>
+                <th>震源深度</th>
+                <th>震源地纬度</th>
+                <th>震源地经度</th>
+                <th>地震信息更新校验码</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 使用JavaScript动态生成表格内容 -->
+        </tbody>
+    </table>
+
+    <div class="refresh-button">
+        <button onclick="refreshData()">刷新列表</button>
+    </div>
+
+    <script>
+        const tableBody = document.querySelector('tbody');
+        let intervalId;
+
+        function refreshData() {
+            clearInterval(intervalId);
+            tableBody.innerHTML = '';
+            fetchData();
+            intervalId = setInterval(fetchData, 1000);
+        }
+
+        function fetchData() {
+            fetch('https://api.wolfx.jp/cenc_eqlist.json')
+                .then(response => response.json())
+                .then(data => {
+                    const audio = new Audio('notification.mp3');
+                    audio.play();
+
+                    data.forEach((earthquake, index) => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${index + 1}</td>
+                            <td>${earthquake.type}</td>
+                            <td>${earthquake.time}</td>
+                            <td>${earthquake.location}</td>
+                            <td>${earthquake.magnitude}</td>
+                            <td>${earthquake.depth}</td>
+                            <td>${earthquake.latitude}</td>
+                            <td>${earthquake.longitude}</td>
+                            <td>${earthquake.md5}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => console.error(error));
+        }
+
+        refreshData();
+    </script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title>在线播放器</title>
+  <style>
+    /* 播放器容器样式 */
+    .player-container {
+      position: relative;
+      width: 800px; /* 扩大播放器宽度 */
+      height: 500px; /* 扩大播放器高度 */
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      background-color: #2b2b2b; /* 深色背景 */
+    }
+
+    /* 视频播放器样式 */
+    #video-player {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* 播放器控制按钮样式 */
+    .player-controls {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .player-controls button {
+      padding: 10px;
+      background-color: #444; /* 按钮背景颜色 */
+      color: #fff; /* 按钮文字颜色 */
+      border: none;
+      cursor: pointer;
+      margin: 0 5px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .player-controls button:hover {
+      background-color: #555; /* 鼠标悬停时按钮背景颜色 */
+    }
+
+    .player-controls button:active {
+      transform: translateY(1px);
+    }
+
+    /* 播放列表样式 */
+    .playlist {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    /* 播放列表项样式 */
+    .playlist li {
+      cursor: pointer;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    .playlist li:hover {
+      border: 1px solid #ccc;
+    }
+
+    .playlist .video-title {
+      margin-left: 10px;
+    }
+
+    .playlist .delete-button {
+      margin-left: auto;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="player-container">
+    <video id="video-player" controls></video>
+    <div class="player-controls">
+      <button onclick="loadLocalFiles()"><i class="fas fa-folder-open"></i> 批量导入本地文件</button>
+      <button onclick="loadLocalFile()"><i class="fas fa-folder-open"></i> 导入本地文件</button>
+      <button onclick="loadOnlineFile()"><i class="fas fa-link"></i> 获取在线连接</button>
+    </div>
+  </div>
+  <div class="playlist">
+    <h4>.</h4>
+    <h2>
+    播放列表
+    
+    
+    </h2>
+    <ul id="playlist-items">
+      <!-- PlayList Items will be populated dynamically -->
+    </ul>
+  </div>
+
+  <!-- 使用Font Awesome图标库 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha384-o8r58igl7t2N5rnmJsY8eTNQRO9z5qHdcuGpx0tE2YIuXD6GC6KQ3jhGqlRqrLVF" crossorigin="anonymous"></script>
+
+  <script>
+    // 播放器代码
+    const videoPlayer = document.getElementById('video-player');
+    const playlistItems = document.getElementById('playlist-items');
+
+    // 导入本地文件
+    function loadLocalFile() {
+      const fileInput = document.createElement('input');
+      fileInput.type = 'file';
+      fileInput.accept = 'video/*';
+
+      fileInput.onchange = function(event) {
+        const file = event.target.files[0];
+        const fileURL = URL.createObjectURL(file);
+        addPlaylistItem(fileURL, file.name);
+        playVideo(fileURL);
+      }
+
+      fileInput.click();
+    }
+
+    // 批量导入本地文件
+    function loadLocalFiles() {
+      const fileInput = document.createElement('input');
+      fileInput.type = 'file';
+      fileInput.accept = 'video/*';
+      fileInput.multiple = true;
+
+      fileInput.onchange = function(event) {
+        const files = event.target.files;
+        for (const file of files) {
+          const fileURL = URL.createObjectURL(file);
+          addPlaylistItem(fileURL, file.name);
+        }
+      }
+
+      fileInput.click();
+    }
+
+    // 获取在线连接
+    function loadOnlineFile() {
+      const url = prompt('请输入在线视频链接');
+
+      if (url) {
+        addPlaylistItem(url, '自定义视频');
+      }
+    }
+
+    // 播放视频
+    function playVideo(url) {
+      videoPlayer.src = url;
+      videoPlayer.play();
+    }
+
+    // 添加播放列表项
+    function addPlaylistItem(url, title) {
+      const li = document.createElement('li');
+      const button = document.createElement('button');
+      button.textContent = title;
+      button.onclick = function() {
+        playVideo(url);
+      }
+
+      const deleteButton = document.createElement('span');
+      deleteButton.classList.add('delete-button');
+      deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
+      deleteButton.onclick = function() {
+        li.remove();
+      }
+
+      li.appendChild(button);
+      li.appendChild(deleteButton);
+      playlistItems.appendChild(li);
+    }
+  </script>
+</body>
+</html>

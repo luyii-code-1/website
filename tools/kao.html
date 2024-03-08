@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"JykRtcdguKHJSBU9",ck:"JykRtcdguKHJSBU9",autoTrack:true,hashMode:true})</script>
+	<title>HTML 烤机</title>
+	<style>
+		#button {
+			padding: 20px;
+			background-color: red;
+			color: white;
+			font-size: 30px;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+	</style>
+	<script>
+		function startBurning() {
+			let i = 0;
+			while (i < 1000000000) {
+				i++;
+			}
+			document.getElementById("button").innerHTML = "已烤好";
+			document.getElementById("button").style.backgroundColor = "green";
+			document.getElementById("button").style.cursor = "default";
+		}
+	</script>
+</head>
+<body>
+	<h1>HTML 烤机</h1>
+	<p>点击下面的按钮开始烤机，这可能需要一些时间。</p>
+	<button id="button" onclick="startBurning()">开始烤机</button>
+</body>
+</html>
+

@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"JykRtcdguKHJSBU9",ck:"JykRtcdguKHJSBU9",autoTrack:true,hashMode:true})</script>
+	<title>反拖课软件 - 下载页面</title>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			background-color: #212121;
+			color: #fff;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 48px;
+			margin-top: 100px;
+			animation: fadeIn 1s;
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+		.button {
+			display: block;
+			width: 200px;
+			height: 50px;
+			margin: 50px auto;
+			background-color: #3f51b5;
+			color: #fff;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 50px;
+			border-radius: 25px;
+			cursor: pointer;
+			animation: slideIn 1s;
+			transition: all 0.3s ease;
+		}
+
+		.button:hover {
+			background-color: #fff;
+			color: #3f51b5;
+			transform: scale(1.1);
+		}
+
+		@keyframes slideIn {
+			from {
+				transform: translateY(-100%);
+			}
+			to {
+				transform: translateY(0%);
+			}
+		}
+
+		.notice {
+			font-size: 14px;
+			margin-top: 10px;
+			animation: fadeIn 1s;
+		}
+	</style>
+</head>
+<body>
+	<h1>反拖课软件</h1>
+	<button class="button" onclick="openWindowWithAnimation('/jz.html')">下载</button>
+
+	<script>
+	function openWindowWithAnimation(url) {
+	  var newWindow = window.open("", "_blank", "width=1000, height=1400");
+	  
+	  // 在新窗口加载完成后执行动画
+	  newWindow.onload = function() {
+		newWindow.document.body.style.opacity = 0; // 初始透明度为 0
+		
+		// 使用 requestAnimationFrame 在动画帧中逐渐增加透明度
+		var opacity = 0;
+		function animate() {
+		  opacity += 0.05; // 每帧透明度增加量
+		  newWindow.document.body.style.opacity = opacity;
+		  if (opacity < 1) {
+			requestAnimationFrame(animate); // 继续下一帧动画
+		  }
+		}
+		
+		animate(); // 开始执行动画
+	  };
+	  
+	  newWindow.location.href = url; // 加载指定 URL
+	}
+	</script>
+	
+	<style>
+	body {
+	  opacity: 1; /* 设置默认透明度为 1，以便显示动画效果 */
+	  transition: opacity 0.5s; /* 添加过渡效果 */
+	}
+
+	</style>
+	
+	<a href="/index.html" class="button">回到首页</a>
+	<p class="notice">!!!!!!!!!!!此程序使用易语言编写，可能会被杀毒软件误杀</p>
+	<h2>软件介绍：</h2>
+	<iframe src="//player.bilibili.com/player.html?aid=271498845&bvid=BV1yc411A76b&cid=1136755213&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+	<h2>运行展示：</h2>
+	<iframe src="//player.bilibili.com/player.html?aid=356371452&bvid=BV1kX4y1C7EU&cid=1135754756&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</body>
+</html>

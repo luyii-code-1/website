@@ -1,0 +1,90 @@
+﻿今天，2023/2/16 20:06:43	检测到网络攻击	175.178.63.63	TCP	39664	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:39664	网络数据包	
+今天，2023/2/16 20:04:43	检测到网络攻击	175.178.63.63	TCP	17685	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:17685	网络数据包	
+今天，2023/2/16 20:02:43	检测到网络攻击	175.178.63.63	TCP	12512	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:12512	网络数据包	
+今天，2023/2/16 20:00:43	检测到网络攻击	175.178.63.63	TCP	8029	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:8029	网络数据包	
+今天，2023/2/16 19:58:42	检测到网络攻击	175.178.63.63	TCP	2869	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:2869	网络数据包	
+今天，2023/2/16 19:58:16	检测到网络攻击	198.98.54.161	TCP	9748	10_0_4_7\Administrator	活动用户	已阻止: DoS.Generic.Flood.TCPSYN	DoS.Generic.Flood.TCPSYN	已阻止	TCP 从 198.98.54.161 在 10.0.4.7:9748	网络数据包	
+今天，2023/2/16 19:58:14	检测到网络攻击	185.122.204.130	TCP	10034	10_0_4_7\Administrator	活动用户	已阻止: DoS.Generic.Flood.TCPSYN	DoS.Generic.Flood.TCPSYN	已阻止	TCP 从 185.122.204.130 在 10.0.4.7:10034	网络数据包	
+今天，2023/2/16 19:57:53	检测到网络攻击	175.178.63.63	TCP	4111	10_0_4_7\Administrator	活动用户	已阻止: DoS.Generic.Flood.TCPSYN	DoS.Generic.Flood.TCPSYN	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:4111	网络数据包	
+今天，2023/2/16 19:57:52	检测到网络攻击	175.178.63.63	TCP	1277	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:1277	网络数据包	
+今天，2023/2/16 19:54:59	检测到网络攻击	175.178.63.63	TCP	636	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:636	网络数据包	
+今天，2023/2/16 17:29:57	检测到网络攻击	92.63.196.7	TCP	5766	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.7 在 10.0.4.7:5766	网络数据包	
+今天，2023/2/16 6:07:35	检测到网络攻击	89.248.163.26	TCP	7345	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.26 在 10.0.4.7:7345	网络数据包	
+今天，2023/2/16 6:05:34	检测到网络攻击	89.248.163.26	TCP	803	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.26 在 10.0.4.7:803	网络数据包	
+昨天，2023/2/15 21:40:58	检测到网络攻击	89.248.163.55	TCP	8955	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.55 在 10.0.4.7:8955	网络数据包	
+昨天，2023/2/15 21:38:58	检测到网络攻击	89.248.163.55	TCP	21576	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.55 在 10.0.4.7:21576	网络数据包	
+昨天，2023/2/15 21:27:32	检测到网络攻击	89.248.163.244	TCP	11693	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.244 在 10.0.4.7:11693	网络数据包	
+昨天，2023/2/15 19:18:24	检测到网络攻击	92.63.196.33	TCP	41478	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.33 在 10.0.4.7:41478	网络数据包	
+昨天，2023/2/15 15:21:06	检测到网络攻击	89.248.163.174	TCP	50620	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.174 在 10.0.4.7:50620	网络数据包	
+昨天，2023/2/15 12:51:42	检测到网络攻击	89.248.163.34	TCP	53433	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.34 在 10.0.4.7:53433	网络数据包	
+昨天，2023/2/15 12:32:53	检测到网络攻击	92.63.196.25	TCP	40388	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.25 在 10.0.4.7:40388	网络数据包	
+昨天，2023/2/15 7:54:40	检测到网络攻击	92.63.196.68	TCP	13389	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.68 在 10.0.4.7:13389	网络数据包	
+昨天，2023/2/15 5:59:22	检测到网络攻击	92.63.196.25	TCP	39948	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.25 在 10.0.4.7:39948	网络数据包	
+昨天，2023/2/15 5:40:53	检测到网络攻击	89.248.163.155	TCP	373	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.155 在 10.0.4.7:373	网络数据包	
+昨天，2023/2/15 5:14:56	检测到网络攻击	92.63.196.69	TCP	1432	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.69 在 10.0.4.7:1432	网络数据包	
+昨天，2023/2/15 3:07:14	检测到网络攻击	89.248.163.247	TCP	63250	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.247 在 10.0.4.7:63250	网络数据包	
+2023/2/14 22:11:12	检测到网络攻击	89.248.165.65	TCP	9099	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.165.65 在 10.0.4.7:9099	网络数据包	
+2023/2/14 21:24:49	检测到网络攻击	104.152.52.2	TCP	10000	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 104.152.52.2 在 10.0.4.7:10000	网络数据包	
+2023/2/14 18:50:02	检测到网络攻击	89.248.165.108	TCP	55425	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.165.108 在 10.0.4.7:55425	网络数据包	
+2023/2/14 18:32:39	检测到网络攻击	5.255.109.233	TCP	80	NT AUTHORITY\SYSTEM	系统用户	已阻止: UMIDS:Intrusion.Generic.CVE-2021-44228.a	UMIDS:Intrusion.Generic.CVE-2021-44228.a	已阻止	TCP 从 5.255.109.233 在 10.0.4.7:80	网络数据包	
+2023/2/14 18:32:39	检测到网络攻击	5.255.109.233	TCP	80	NT AUTHORITY\SYSTEM	系统用户	已阻止: UMIDS:Intrusion.Generic.CVE-2021-44228.a	UMIDS:Intrusion.Generic.CVE-2021-44228.a	已阻止	TCP 从 5.255.109.233 在 10.0.4.7:80	网络数据包	
+2023/2/14 16:50:22	检测到网络攻击	92.63.196.32	TCP	38702	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.32 在 10.0.4.7:38702	网络数据包	
+2023/2/14 10:07:23	检测到网络攻击	92.63.196.25	TCP	38387	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.25 在 10.0.4.7:38387	网络数据包	
+2023/2/14 6:30:43	检测到网络攻击	89.248.163.41	TCP	27759	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.41 在 10.0.4.7:27759	网络数据包	
+2023/2/14 6:28:43	检测到网络攻击	89.248.163.41	TCP	14580	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.41 在 10.0.4.7:14580	网络数据包	
+2023/2/14 3:34:54	检测到网络攻击	92.63.196.30	TCP	37816	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.30 在 10.0.4.7:37816	网络数据包	
+2023/2/13 20:56:14	检测到网络攻击	92.63.196.30	TCP	37309	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.30 在 10.0.4.7:37309	网络数据包	
+2023/2/13 19:59:42	检测到网络攻击	89.248.165.37	TCP	63398	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.165.37 在 10.0.4.7:63398	网络数据包	
+2023/2/13 19:57:42	检测到网络攻击	89.248.165.37	TCP	54389	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.165.37 在 10.0.4.7:54389	网络数据包	
+2023/2/13 17:52:41	检测到网络攻击	89.248.165.81	TCP	30615	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.165.81 在 10.0.4.7:30615	网络数据包	
+2023/2/13 14:18:56	检测到网络攻击	92.63.196.94	TCP	3500	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.94 在 10.0.4.7:3500	网络数据包	
+2023/2/13 13:48:57	检测到网络攻击	92.63.196.94	TCP	49278	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.94 在 10.0.4.7:49278	网络数据包	
+2023/2/13 9:20:00	检测到网络攻击	92.63.196.96	TCP	1481	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.96 在 10.0.4.7:1481	网络数据包	
+2023/2/13 9:18:48	检测到网络攻击	104.152.52.219	TCP	5480	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 104.152.52.219 在 10.0.4.7:5480	网络数据包	
+2023/2/13 9:17:59	检测到网络攻击	92.63.196.96	TCP	9528	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.96 在 10.0.4.7:9528	网络数据包	
+2023/2/13 9:13:17	检测到网络攻击	92.63.196.69	TCP	20179	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.69 在 10.0.4.7:20179	网络数据包	
+2023/2/13 6:56:56	检测到网络攻击	5.255.109.233	TCP	80	NT AUTHORITY\SYSTEM	系统用户	已阻止: UMIDS:Intrusion.Generic.CVE-2021-44228.a	UMIDS:Intrusion.Generic.CVE-2021-44228.a	已阻止	TCP 从 5.255.109.233 在 10.0.4.7:80	网络数据包	
+2023/2/13 6:56:56	检测到网络攻击	5.255.109.233	TCP	80	NT AUTHORITY\SYSTEM	系统用户	已阻止: UMIDS:Intrusion.Generic.CVE-2021-44228.a	UMIDS:Intrusion.Generic.CVE-2021-44228.a	已阻止	TCP 从 5.255.109.233 在 10.0.4.7:80	网络数据包	
+2023/2/13 1:29:45	检测到网络攻击	172.93.110.238	TCP	80	NT AUTHORITY\SYSTEM	系统用户	已阻止: UMIDS:Intrusion.Generic.CVE-2021-44228.a	UMIDS:Intrusion.Generic.CVE-2021-44228.a	已阻止	TCP 从 172.93.110.238 在 10.0.4.7:80	网络数据包	
+2023/2/13 1:29:45	检测到网络攻击	172.93.110.238	TCP	80	NT AUTHORITY\SYSTEM	系统用户	已阻止: UMIDS:Intrusion.Generic.CVE-2021-44228.a	UMIDS:Intrusion.Generic.CVE-2021-44228.a	已阻止	TCP 从 172.93.110.238 在 10.0.4.7:80	网络数据包	
+2023/2/12 17:04:16	检测到网络攻击	89.248.165.63	TCP	10015	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.165.63 在 10.0.4.7:10015	网络数据包	
+2023/2/12 13:55:14	检测到网络攻击	92.63.196.94	TCP	3365	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.94 在 10.0.4.7:3365	网络数据包	
+2023/2/12 13:25:10	检测到网络攻击	92.63.196.94	TCP	593	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.94 在 10.0.4.7:593	网络数据包	
+2023/2/12 12:55:03	检测到网络攻击	92.63.196.94	TCP	3318	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.94 在 10.0.4.7:3318	网络数据包	
+2023/2/12 3:15:31	检测到网络攻击	92.63.196.94	TCP	13385	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.94 在 10.0.4.7:13385	网络数据包	
+2023/2/11 21:41:36	检测到网络攻击	89.248.163.168	TCP	20313	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.168 在 10.0.4.7:20313	网络数据包	
+2023/2/11 21:38:52	检测到网络攻击	89.248.165.99	TCP	21639	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.165.99 在 10.0.4.7:21639	网络数据包	
+2023/2/11 21:36:52	检测到网络攻击	89.248.165.99	TCP	7709	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.165.99 在 10.0.4.7:7709	网络数据包	
+2023/2/11 11:09:30	检测到网络攻击	104.152.52.7	TCP	179	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 104.152.52.7 在 10.0.4.7:179	网络数据包	
+2023/2/11 10:29:53	检测到网络攻击	104.152.52.7	TCP	427	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 104.152.52.7 在 10.0.4.7:427	网络数据包	
+2023/2/11 7:33:23	检测到网络攻击	89.248.165.71	TCP	1003	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.165.71 在 10.0.4.7:1003	网络数据包	
+2023/2/11 7:31:23	检测到网络攻击	89.248.165.71	TCP	33699	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.165.71 在 10.0.4.7:33699	网络数据包	
+2023/2/11 6:49:40	检测到网络攻击	104.152.52.14	TCP	465	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 104.152.52.14 在 10.0.4.7:465	网络数据包	
+2023/2/11 3:47:58	检测到网络攻击	89.248.165.108	TCP	17632	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.165.108 在 10.0.4.7:17632	网络数据包	
+2023/2/11 1:09:01	检测到网络攻击	5.255.109.233	TCP	8080	NT AUTHORITY\SYSTEM	系统用户	已阻止: UMIDS:Intrusion.Generic.CVE-2021-44228.a	UMIDS:Intrusion.Generic.CVE-2021-44228.a	已阻止	TCP 从 5.255.109.233 在 10.0.4.7:8080	网络数据包	
+2023/2/11 1:09:01	检测到网络攻击	5.255.109.233	TCP	8080	NT AUTHORITY\SYSTEM	系统用户	已阻止: UMIDS:Intrusion.Generic.CVE-2021-44228.a	UMIDS:Intrusion.Generic.CVE-2021-44228.a	已阻止	TCP 从 5.255.109.233 在 10.0.4.7:8080	网络数据包	
+2023/2/11 0:22:19	检测到网络攻击	89.248.163.174	TCP	43584	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.174 在 10.0.4.7:43584	网络数据包	
+2023/2/10 21:57:34	检测到网络攻击	175.178.63.63	TCP	2001	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:2001	网络数据包	
+2023/2/10 21:54:59	检测到网络攻击	175.178.63.63	TCP	10012	10_0_4_7\Administrator	活动用户	已阻止: DoS.Generic.Flood.TCPSYN	DoS.Generic.Flood.TCPSYN	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:10012	网络数据包	
+2023/2/10 21:54:58	检测到网络攻击	175.178.63.63	TCP	6004	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:6004	网络数据包	
+2023/2/10 19:57:49	检测到网络攻击	175.178.63.63	TCP	1998	10_0_4_7\Administrator	活动用户	已阻止: DoS.Generic.Flood.TCPSYN	DoS.Generic.Flood.TCPSYN	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:1998	网络数据包	
+2023/2/10 19:57:47	检测到网络攻击	175.178.63.63	TCP	3766	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:3766	网络数据包	
+2023/2/10 19:51:57	检测到网络攻击	175.178.63.63	TCP	8443	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:8443	网络数据包	
+2023/2/10 19:33:42	检测到网络攻击	175.178.63.63	TCP	1027	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:1027	网络数据包	
+2023/2/10 19:24:05	检测到网络攻击	175.178.63.63	TCP	465	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 175.178.63.63 在 10.0.4.7:465	网络数据包	
+2023/2/10 17:23:53	检测到网络攻击	89.248.163.43	TCP	5459	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.43 在 10.0.4.7:5459	网络数据包	
+2023/2/10 17:21:52	检测到网络攻击	89.248.163.43	TCP	10103	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.43 在 10.0.4.7:10103	网络数据包	
+2023/2/10 17:19:52	检测到网络攻击	89.248.163.43	TCP	1423	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.43 在 10.0.4.7:1423	网络数据包	
+2023/2/10 16:55:58	检测到网络攻击	92.63.196.8	TCP	41442	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.8 在 10.0.4.7:41442	网络数据包	
+2023/2/10 16:53:55	检测到网络攻击	92.63.196.8	TCP	53744	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.8 在 10.0.4.7:53744	网络数据包	
+2023/2/10 16:51:55	检测到网络攻击	92.63.196.8	TCP	59284	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 92.63.196.8 在 10.0.4.7:59284	网络数据包	
+2023/2/10 11:40:07	检测到网络攻击	104.152.52.3	TCP	8008	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 104.152.52.3 在 10.0.4.7:8008	网络数据包	
+2023/2/10 11:24:54	检测到网络攻击	104.152.52.13	TCP	1026	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 104.152.52.13 在 10.0.4.7:1026	网络数据包	
+2023/2/10 7:04:14	检测到网络攻击	89.248.163.64	TCP	6663	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.64 在 10.0.4.7:6663	网络数据包	
+2023/2/10 7:02:14	检测到网络攻击	89.248.163.64	TCP	42263	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.64 在 10.0.4.7:42263	网络数据包	
+2023/2/10 7:00:14	检测到网络攻击	89.248.163.64	TCP	1779	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.64 在 10.0.4.7:1779	网络数据包	
+2023/2/10 6:40:49	检测到网络攻击	89.248.165.216	TCP	1570	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.165.216 在 10.0.4.7:1570	网络数据包	
+2023/2/10 6:38:49	检测到网络攻击	89.248.165.216	TCP	23597	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.165.216 在 10.0.4.7:23597	网络数据包	
+2023/2/10 6:38:48	检测到网络攻击	89.248.163.168	TCP	63211	NT AUTHORITY\SYSTEM	系统用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.168 在 10.0.4.7:63211	网络数据包	
+2023/2/9 22:09:05	检测到网络攻击	89.248.163.57	TCP	6100	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 89.248.163.57 在 10.0.4.7:6100	网络数据包	
+2023/2/9 19:50:08	检测到网络攻击	39.185.111.15	TCP	79	10_0_4_7\Administrator	活动用户	已阻止: Scan.Generic.PortScan.TCP	Scan.Generic.PortScan.TCP	已阻止	TCP 从 39.185.111.15 在 10.0.4.7:79	网络数据包	

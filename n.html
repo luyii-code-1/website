@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"JykRtcdguKHJSBU9",ck:"JykRtcdguKHJSBU9",autoTrack:true,hashMode:true})</script>
+	<title>内存清理器 - 下载页面</title>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			background-color: #212121;
+			color: #fff;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 48px;
+			margin-top: 100px;
+			animation: fadeIn 1s;
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+		.button {
+			display: block;
+			width: 200px;
+			height: 50px;
+			margin: 50px auto;
+			background-color: #3f51b5;
+			color: #fff;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 50px;
+			border-radius: 25px;
+			cursor: pointer;
+			animation: slideIn 1s;
+			transition: all 0.3s ease;
+		}
+
+		.button:hover {
+			background-color: #fff;
+			color: #3f51b5;
+			transform: scale(1.1);
+		}
+
+		@keyframes slideIn {
+			from {
+				transform: translateY(-100%);
+			}
+			to {
+				transform: translateY(0%);
+			}
+		}
+
+		.notice {
+			font-size: 14px;
+			margin-top: 10px;
+			animation: fadeIn 1s;
+		}
+	</style>
+</head>
+<body>
+	<h1>内存清理器</h1>
+
+	<a href="/n.exe" class="button">Windows版本下载</a>
+	<p class="notice">此程序使用易语言编写，可能会被杀毒软件误杀</p>
+
+	<script>
+		document.querySelector('.button').addEventListener('click', function() {
+			alert('下载开始！');
+		});
+	</script>
+</body>
+</html>

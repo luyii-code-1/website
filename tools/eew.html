@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyii - 地震预警接受终端</title>
+    <style>
+        /* 省略样式，保持不变 */
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        #map-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        canvas {
+            display: block;
+            margin: 10px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Luyii - 地震预警接受终端<en>在线版</en>Beta 1</h1>
+        <p>此页面目前支持通过HTTP方式接收JMA（日本气象厅）*，四川省地震局*，CWA（台湾交通部中央气象属）*，<a href="cencv.ntml">CENCV（#实验性#中国地震台网可视化）</a></p>
+        <p>注意：您需要接受到预警后才会在列表显示，我们暂时不提供历史预警功能！</p>
+        <table id="eewTable">
+            <tr>
+                <th>ID</th>
+                <th>发报时间</th>
+                <th>发报数</th>
+                <th>发震时间</th>
+                <th>震源地</th>
+                <th>纬度</th>
+                <th>经度</th>
+                <th>震级</th>
+                <th>震源深度</th>
+                <th>是否取消</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="map-container">
+        <h1>地图#实验性#</h1>
+        <canvas id="quakeMap" width="600" height="400"></canvas>
+    </div>
+
+    <!-- 新增测试按钮 -->
+    <div>
+        <button id="testNotificationBtn">测试通知</button>
+    </div>
+
+    <script>
+
+    const eewTable = document.getElementById("eewTable");
+    const quakeMap = document.getElementById("quakeMap");
+    const ctx = quakeMap.getContext("2d");
+
+    const apiUrl = [
+        "https://api.wolfx.jp/sc_eew.json",
+        "https://api.wolfx.jp/jma_eew.json",
+        "https://api.wolfx.jp/cwa_eew.json",
+        "https://api.wolfx.jp/cenc_eqlist.json"
+    ];
+
+    function fetchEarthquakeData(apiUrl) {
+        return fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                // TODO: 处理地震数据并更新表格和地图
+                console.log(data);
+            })
+            .catch(error => console.error("Error fetching earthquake data:", error));
+    }
+
+    function updateEarthquakeData() {
+        apiUrl.forEach(api => {
+            fetchEarthquakeData(api);
+        });
+    }
+
+    function drawMapCross(x, y) {
+        ctx.clearRect(0, 0, quakeMap.width, quakeMap.height);
+        ctx.beginPath();
+        ctx.moveTo(x - 10, y - 10);
+        ctx.lineTo(x + 10, y + 10);
+        ctx.moveTo(x + 10, y - 10);
+        ctx.lineTo(x - 10, y + 10);
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+    }
+
+function updateMap(data) {
+    // TODO: 根据地震数据更新地图上的位置
+    const lastQuake = data[data.length - 1];
+    if (lastQuake) {
+        // 调整经度和纬度的计算方式
+        const x = ((lastQuake.longitude + 180) / 360) * quakeMap.width;
+        const y = ((90 - lastQuake.latitude) / 180) * quakeMap.height;
+        drawMapCross(x, y);
+    }
+}
+
+    function displayNotification(data) {
+        // TODO: 根据地震数据显示通知
+        const lastQuake = data[data.length - 1];
+        if (lastQuake) {
+            const notification = new Notification("地震预警", {
+                body: `最近一次地震：${lastQuake.hypocenter}，震级：${lastQuake.magunitude}`
+            });
+
+            // 播放音频
+            const audio = new Audio("update.mp3");
+            audio.play();
+        }
+    }
+
+    function init() {
+        // 请求地震数据并定时更新
+        updateEarthquakeData();
+        setInterval(updateEarthquakeData, 2000);
+
+        // 请求通知权限
+        Notification.requestPermission().then(permission => {
+            if (permission === "granted") {
+                console.log("Notification permission granted");
+            }
+        });
+    }
+
+    // 页面加载完成后初始化
+    document.addEventListener("DOMContentLoaded", init);
+
+
+        // 新增测试按钮点击事件
+        const testNotificationBtn = document.getElementById("testNotificationBtn");
+        testNotificationBtn.addEventListener("click", () => {
+            const testData = [{ /* 模拟地震数据 */ }];
+            displayNotification(testData);
+        });
+    </script>
+    <p>* 由https://api.wolfx.jp/提供API服务</p>
+</body>
+</html>

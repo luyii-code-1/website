@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"JykRtcdguKHJSBU9",ck:"JykRtcdguKHJSBU9",autoTrack:true,hashMode:true})</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>捐赠反拖课软件开发者（luyii-code与LYN-luyuan）</title>
+  <style>
+    body {
+      background-color: #999999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    h1 {
+      color: white;
+      transform: scale(1);
+    }
+    
+    #imageContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      transform: scale(0.8);
+    }
+    
+    #imageContainer img {
+      width: 120%;
+      margin: 0 10px;
+    }
+    
+    #buttonContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 30px;
+      margin: 10px;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      border-radius: 10px;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>捐赠我们，让程序持久更行运行！</h1>
+  
+  <div id="imageContainer">
+    <img src="/jpg/weichatpay.jpg" alt="WeChat Pay">
+    <img src="/jpg/airpay.jpg" alt="AirPay">
+  </div>
+  <h2>这个项目目前没有任何支持，所以一旦开发者资金不足，项目会无法继续运行，所以请考虑捐赠我们，让项目持续下去</h2>
+  <h2>我们并不限制您捐赠的数目，请合理捐赠！谢谢！</h2>
+  <button>你也可以给<a href="https://www.bilibili.com/video/BV1yc411A76b/?share_source=copy_web&vd_source=5255dd423e7fb6d212c8ea578099e90c">该软件介绍视频</a>点一个免费的三连来支持我们——></button>
+  <div id="buttonContainer">
+    <button onclick="openCG()">继续</button>
+    <button onclick="closePage()">取消</button>
+  </div>
+  
+  <script>
+    function openCG() {
+      window.open("/download/cg.exe", "_blank");
+    }
+    
+    function closePage() {
+      window.close();
+    }
+  </script>
+</body>
+</html>

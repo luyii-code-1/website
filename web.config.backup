@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.webServer>
+        <httpRedirect enabled="false" destination="http://luyii.52chye.cn" exactDestination="true" httpResponseStatus="Found" />
+        <staticContent>
+            <remove fileExtension="." />
+            <mimeMap fileExtension=".*" mimeType="text/html" />
+            <mimeMap fileExtension="." mimeType="text/html" />
+        </staticContent>
+        <defaultDocument>
+            <files>
+                <add value="check.html" />
+            </files>
+        </defaultDocument>
+    </system.webServer>
+</configuration>

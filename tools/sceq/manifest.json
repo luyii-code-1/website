@@ -1,0 +1,32 @@
+{
+	"name": "リアルタイム地震ビューアー v1.6.0",
+	"short_name": "srev 1.6.0",
+	"description": "リアルタイム地震ビューアー",
+	"start_url": "./index.html",
+	"display": "standalone",
+	"theme_color": "#12151a",
+	"background_color": "#12151a",
+	"orientation": "any",
+	"icons": [
+		{
+			"src": "./appicon48.png",
+			"sizes": "48x48",
+			"purpose": "maskable"
+		},
+		{
+			"src": "./appicon96.png",
+			"sizes": "96x96",
+			"purpose": "maskable"
+		},
+		{
+			"src": "./appicon192.png",
+			"sizes": "192x192",
+			"purpose": "maskable"
+		},
+		{
+			"src": "./appicon512.png",
+			"sizes": "512x512",
+			"purpose": "maskable"
+		}
+	]
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>云电脑在线状态</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: #fff;
+            margin: 10px;
+            width: 100px;
+        }
+
+        .online {
+            background-color: #4CAF50; /* 绿色 */
+        }
+
+        .offline {
+            background-color: #F44336; /* 红色 */
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #008CBA; /* 蓝色 */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>云电脑在线状态</h1>
+        
+        <div class="status online" id="status">在线</div>
+
+        <div class="status offline" id="offlineStatus" style="display:none">离线/故障</div>
+
+        <button class="button" onclick="restore()">还原</button>
+    </div>
+
+    <script>
+        function updateStatus(online) {
+            const onlineStatus = document.getElementById("status");
+            const offlineStatus = document.getElementById("offlineStatus");
+
+            if (online) {
+                onlineStatus.style.display = "block";
+                offlineStatus.style.display = "none";
+            } else {
+                onlineStatus.style.display = "none";
+                offlineStatus.style.display = "block";
+            }
+        }
+
+        function restore() {
+            // 模拟请求还原
+            alert("已请求还原");
+            // 运行 /api/rest.exe
+            // 这里使用fetch来向服务器发送请求
+            fetch("/api/rest.exe")
+                .then((response) => {
+                    // 这里可以根据response的状态码等信息判断是否运行成功
+                    // 这里不弹出提示运行成功了，而是直接更新状态为在线
+                    updateStatus(true);
+                })
+                .catch((error) => {
+                    // 请求失败时，也直接更新状态为离线
+                    updateStatus(false);
+                });
+        }
+
+        // 初始化时从 /api/cloudpconline.html 获取在线状态
+        fetch("/api/cloudpconline.html")
+            .then((response) => response.text())
+            .then((data) => {
+                const online = data.trim() === "1";
+                updateStatus(online);
+            })
+            .catch((error) => {
+                // 默认为离线状态
+                updateStatus(false);
+            });
+    </script>
+</body>
+</html>

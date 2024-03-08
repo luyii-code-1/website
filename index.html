@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name='description' content='Luyii/luyii-code\luyi的个人网站。Run on Rainyun,protected by Cloudflare'>
+    <script>
+let isTriggered = false;
+let blocked = false;
+document.addEventListener("keydown", function(event) {
+  if (event.key === "F12") {
+    isTriggered = true;
+    blocked = true;
+    event.preventDefault();
+const body = document.body;
+const footer = document.querySelector("footer");
+body.querySelectorAll("*").forEach(element => {
+  element.remove();
+});
+if (footer) {
+  footer.querySelectorAll("*").forEach(element => {
+    element.remove();
+  });
+}
+  let colors = ["red", "green", "blue"];
+  let interval = setInterval(() => {
+    let color = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = color;
+  }, 100);
+  setTimeout(() => {
+    clearInterval(interval);
+  }, 5000);
+  }
+});
+    window.oncontextmenu = function () { return false; }
+    // 获取当前页面的URL
+var currentUrl = window.location.href;
+
+// 检查是否已经缓存了页面内容
+var cachedContent = localStorage.getItem(currentUrl);
+
+// 检查缓存是否过期
+var cacheExpiration = localStorage.getItem(currentUrl + "_expiration");
+if (cachedContent && cacheExpiration && new Date().getTime() < parseInt(cacheExpiration)) {
+    // 如果缓存未过期，直接加载缓存的页面内容
+    document.documentElement.innerHTML = cachedContent;
+} else {
+    // 如果缓存不存在或已过期，重新加载页面内容
+
+    // 创建XMLHttpRequest对象
+    var xhr = new XMLHttpRequest();
+
+    // 监听请求状态变化
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                // 请求成功，将页面内容缓存到localStorage中
+                localStorage.setItem(currentUrl, xhr.responseText);
+
+                // 设置缓存有效期为48小时
+                var expirationTime = new Date().getTime() + 48 * 60 * 60 * 1000;
+                localStorage.setItem(currentUrl + "_expiration", expirationTime);
+
+                // 替换当前页面内容
+                document.documentElement.innerHTML = xhr.responseText;
+            }
+        }
+    };
+
+    // 打开并发送请求
+    xhr.open("GET", currentUrl, true);
+    xhr.send();
+}
+
+// 禁止页面发生302重定向
+window.onbeforeunload = function () {
+    return "成功拦截一次网站劫持。";
+};
+
+</script>  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyi的网站 - Luyii's Website</title>
+    <style>
+        body {
+            background-color: #8af1ec;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3, h4, p {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        button {
+            color: white;
+            background-color: #09c2fa;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: all 0.5s ease;
+            margin: 10px;
+            width: 200px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0bfafa;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hello, visitor!</h1>
+        </header>
+
+        <main>
+            <h2>这里是Luyi的个人网站，由<a href="https://rainyun.com/luyii_">雨云</a>强劲驱动</h2>
+            <h3>bilibili：<a href="https://space.bilibili.com/2144873438?spm_id_from=333.1007.0.0">luyii-code</a></h3>
+                        <h3>GitHub：<a href="https://github.com/luyii-code-1/">luyii-code-1</a></h3>
+            <p>你可以通过邮箱联系我：<a href="mailto:admin@luyii.fun">admin@luyii.fun</a></p>
+
+            <h3>我的作品：</h3>
+            <p>
+                <button><a href="/cz.html">反拖课软件</a></button>
+                <button><a href="https://projectbc.luyii.fun">ProjectBC-广播控制</a></button>
+                <button><a href="/download/114514.exe">Windows恶臭盒</a></button>
+                <button><a href="/tools/cencv.html">CENCV - 基于CENC的EEW发布端</a></button>
+                 <button><a href="https://github.com/luyii-code-1/AntiChinaMoble302">反中国移动302域名劫持</a></button>
+            </p>
+            <p>
+                <button><a href="/download/onlinecheck.exe">目标在线状态监测器</a></button>
+                <button><a href="/download/zyntm.exe">Windows只因盒</a></button>
+                <button><a href="/tools/eew.html">YiEEW - 集成EEW接受终端</a></button>
+                                <button><a href="/n.html">内存清理器</a></a></button>
+                <h4>奇怪的作品（们）</h4>
+                <button><a href="/happytime.html">happytime.html</a></button>
+                <button><a href="/musicplayer.html">在线视频播放器?</a></button>
+                                <button><a href="/z.html">z.html</a></button>
+                                                <button><a href="/musicplayer.html">在线视频播放器?</a></button>
+            </p>
+
+            <h3>小工具：</h3>
+            <p>
+                <button><a href="/tools/clock.html">简易表盘时钟</a></button>
+                <button><a href="/tools/huaji.html">滑稽笑脸</a></button>
+                <button><a href="/vsbm">毒蘑菇烤机</a></button>
+            </p>
+
+            <h4>好东西：</h4>
+            <p>
+                <button><a href="/114514.mp4">好康的</a></button>
+            </p>
+        </main>
+        <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"343069571", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+        <footer>
+            <a target="_blank" title="51la网站统计" href="https://v6.51.la/land/JykRtcdguKHJSBU9"><img src="https://sdk.51.la/icon/2-1.png" alt="51la网站统计"></a>
+        </footer>
+    </div>
+</body>
+</html>
